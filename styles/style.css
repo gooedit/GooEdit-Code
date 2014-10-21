@@ -1,0 +1,168 @@
+
+table.cute-balloon-gray {
+    color: #444;
+    border: 0;
+}
+
+    table.cute-balloon-gray td {
+    }
+
+    table.cute-balloon-gray span {
+    }
+
+    table.cute-balloon-gray td img {
+    }
+
+    table.cute-balloon-gray span.noroeste {
+        /*background:url(no.png) no-repeat;*/
+        width: 27px;
+        height: 27px;
+    }
+
+    table.cute-balloon-gray span.noreste {
+        /*background:url(ne.png) no-repeat;*/
+        width: 27px;
+        height: 27px;
+    }
+
+    table.cute-balloon-gray span.sureste {
+        /*background:url(se.png) no-repeat;*/
+        width: 27px;
+        height: 27px;
+    }
+
+    table.cute-balloon-gray span.suroeste {
+        /*background:url(so.png) no-repeat;*/
+        width: 27px;
+        height: 27px;
+    }
+
+    table.cute-balloon-gray td.norte {
+        /*background:url(norte.png) repeat-x;*/
+        height: 27px;
+    }
+
+    table.cute-balloon-gray td.este {
+        /*background:url(este.png) repeat-y;*/
+    }
+
+    table.cute-balloon-gray td.oeste {
+        /*background:url(oeste.png) repeat-y;*/
+    }
+
+    table.cute-balloon-gray td.sur {
+        /*background:url(sur.png) repeat-x;*/
+        height: 27px;
+    }
+
+    table.cute-balloon-gray span.pso {
+        /*background:url(pso.png) no-repeat;*/
+        height: 27px;
+        width: 100px;
+    }
+
+    table.cute-balloon-gray td.pse {
+        /*background:url(pse.png) no-repeat;*/
+    }
+
+    table.cute-balloon-gray td.content {
+        /*background:url(bg.png);*/
+        padding: 0px;
+        width: auto;
+        color: black;
+        background-color: steelblue;
+    }
+
+
+input.myButton {
+    /*-moz-box-shadow: 3px 0px 0px -1px #8a2a21;
+    -webkit-box-shadow: 3px 0px 0px -1px #8a2a21;
+    box-shadow: 3px 0px 0px -1px #8a2a21;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);*/
+    background-color: #c62d1f;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Georgia;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 1px 13px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+    background-color: #6d695c;
+background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70px 120px;
+background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+
+}
+
+    input.myButton:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+        background: -moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+        background: -webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+        background: -o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+        background: -ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+        background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+        background-color: #f24437;
+    }
+
+    input.myButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+img.ButtonClose {
+    cursor: pointer;
+}
+
+div.wrraper-ltr {
+    direction: ltr;
+}
+
+  .gooDesignButton {
+        display: none;
+    }
+
+    .gooEdit{
+        border:3px solid blue;
+    }
+    .tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+  -webkit-transform: rotate(-20deg);
+     -moz-transform: rotate(-20deg);
+       -o-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.bgStatus{
+    background-color: darkgrey;
+}
+

@@ -1,0 +1,144 @@
+﻿<style>
+    .changeSliderPositionImg {
+        cursor: pointer;
+        float: right;
+        width: 25px;
+        height: 25px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+        .changeSliderPositionImg:hover {
+            /*background: blue;*/
+            border-radius: 50%;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            color: red;
+        }
+</style>
+
+<div class="wrraper-ltr">
+    <div class="slider textSlider" style="background-color: #6d695c; background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)), linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)); background-size: 70px 120px; background-size: 20px 20px; position: absolute; border-style: outset; border-width: thin;
+           -webkit-border-radius: 5px; display: none; z-index: 999999999999; ">
+        <table style="padding:1px 1px 1px 1px; width:350px;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td colspan="3" style="float:left;" id="ignore">
+                    <img id="textButtonClose" title="Close" src="images/slideleft.png" class="ButtonClose" alt="Close" style="width: 17px; margin-top: 2px;" />
+                    <font color="white">
+                        Add text
+                        </font>
+                        <img class="changeSliderPositionImg" title="Move slider" src="images/forward_arrow_right.png" alt="Move slider" />
+</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border-top-width:1px;border-top-color:Black;border-top-style:solid; padding-top:10px;">
+                    <font color="white">
+                        Insert text:
+                        </font>
+                        <input id="inputText" type="text" value="" placeholder="Your Text" style="width:273px;">
+</td>
+            </tr>
+            <tr>
+                <td class="ui-fontpicker-family-container" valign="top">
+                    <div class="ui-fontpicker-family">
+                        <div><font color="white">Font:</font></div>
+                        <div>
+                            <select id="fontSelector" class=" ui-fontpicker-family-select" size="8">
+                                <option value="Arial" selected>Arial</option>
+                                <option value="Arial Black">Arial Black</option>
+                                <option value="Comic Sans MS">Comic Sans MS</option>
+                                <option value="Courier New">Courier New</option>
+                                <option value="David">David</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Impact">Impact</option>
+                                <option value="Lucida Console">Lucida Console</option>
+                                <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                                <option value="Palatino Linotype">Palatino Linotype</option>
+                                <option value="Tahoma">Tahoma</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Trebuchet MS">Trebuchet MS</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Lucida Handwriting">Lucida Handwriting</option>
+                                <option value="Matura MT Script Capitals">Matura MT Script Capitals</option>
+                                <option value="Mistral">Mistral</option>
+                                <option value="Old English Text MT">Old English Text MT</option>
+                                <option value="Ravie">Ravie</option>
+                                <option value="Rage">Rage</option>
+                                <option value="Viner Hand ITC">Viner Hand ITC</option>
+                                <option value="Showcard Gothic">Showcard Gothic</option>
+                            </select>
+                        </div>
+                    </div>
+                </td>
+                <td class="ui-fontpicker-style-container ui-fontpicker-padding-left" valign="top">
+                    <div class="ui-fontpicker-style">
+                        <div><font color="white">Style:</font></div>
+                        <div>
+                            <select id="styleSelector" size="8">
+                                <option value="Normal" selected>Normal</option>
+                                <option value="Bold">Bold</option>
+                                <option value="Italic">Italic</option>
+                                <option value="Bold italic">Bold italic</option>
+                            </select>
+                        </div>
+                    </div>
+                </td>
+                <td class="ui-fontpicker-size-container ui-fontpicker-padding-left" valign="top">
+                    <div class="ui-fontpicker-size">
+                        <div><font color="white">Size:</font></div>
+                        <div>
+                            <select id="sizeSelector" class="ui-fontpicker-size-select" size="8">
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="14">14</option>
+                                <option value="16">16</option>
+                                <option value="18" selected>18</option>
+                                <option value="21">21</option>
+                                <option value="24">24</option>
+                                <option value="36">36</option>
+                                <option value="48">48</option>
+                                <option value="60">60</option>
+                                <option value="72">72</option>
+                            </select>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Color:
+                    <br />
+
+                    <input id="colorSelector" type="color" style="width:90px;" />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <center>
+                        <div id="font-view" style="border:double">
+                            <div id="exampleDisplayArea">AaBbYyZz</div>
+                        </div>
+                        <label id="msgLocation" style="color:red; font-family:Century; font-weight:bold">Choose location by clicking on the image</label>
+                        <br />
+                        <input class="myButton" style="margin-bottom:2px; visibility:hidden; margin-top:5px;margin-left:20px;" type="button" id="textButton" value="Add text!">
+                        <input class="myButton" style="margin-bottom:2px; visibility:hidden; margin-top:5px;margin-left:20px;" type="button" id="undoTextButton" value="Undo text!">
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,90 @@
+﻿<style>
+    .changeSliderPositionImg {
+        cursor: pointer;
+        float: right;
+        width: 25px;
+        height: 25px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+        .changeSliderPositionImg:hover {
+            /*background: blue;*/
+            border-radius: 50%;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            color: red;
+        }
+</style>
+<div class="wrraper-ltr">
+
+    <div class="slider frameSlider" style="background-color: #6d695c; background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)), linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)); background-size: 70px 120px; background-size: 20px 20px; position: absolute; border-style: outset; border-width: thin;
+           -webkit-border-radius: 5px; display: none; z-index: 999999999999; "> 
+        <table style="padding:1px 1px 1px 1px" cellpadding="0" cellspacing="0" border="0" width="195">
+            <tr>
+                <td colspan="2" id="ignore">
+                    <img id="frameButtonClose" title="Close" src="images/slideleft.png" class="ButtonClose" alt="Close" style="width: 17px; margin-top: 2px;" />
+                    <font color="white">
+                        Frame
+                        </font>
+                        <img class="changeSliderPositionImg" title="Move slider" src="images/forward_arrow_right.png" alt="Move slider" />
+</td>
+            </tr>
+            <tr>
+                <td style="border-top-width:1px;border-top-color:Black;border-top-style:solid; padding-top:10px;">
+                    <center>
+                        <select id="selectOpt">
+                            <option value="" disabled selected style="display:none;"><font color="white">Select Frame</font></option>
+                            <option value="border1">Pink Flowers</option>
+                            <option value="border2">Pink Spray</option>
+                            <option value="border3">Black Line</option>
+                            <option value="border4">Left Top Side</option>
+                            <option value="border5">Yellow Flowers</option>
+                            <option value="border6">Mixed Flowers</option>
+                            <option value="border7">Vintage</option>
+                            <option value="border8">Mustache</option>
+                            <option value="border9">Clorful Stars</option>
+                            <option value="border10">Hearts 1</option>
+                            <option value="border11">Binoculars</option>
+                            <option value="border12">Hearts 2</option>
+                            <option value="border13">Snails</option>
+                            <option value="border14">Ants</option>
+                            <option value="border15">Darkness</option>
+                            <option value="border16">Rose 1</option>
+                            <option value="border17">Rose 2</option>
+                            <option value="border18">Baloons</option>
+                            <option value="border19">Happy Birth-Day</option>
+                            <option value="border20">Snow White</option>
+                            <option value="border21">Smurfs</option>
+                        </select>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br />
+                    <div id="frame-page">
+                        <center>
+                            <div id="frameDisplayArea"></div>
+                        </center>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <input class="myButton"  type="button" id="frameButton" value="Frame IT!" disabled>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

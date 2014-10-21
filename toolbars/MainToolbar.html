@@ -1,0 +1,190 @@
+﻿<style>
+    .mainToolbar {
+        margin: auto;
+        /*background: -webkit-linear-gradient(top, rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%,rgba(58,132,195,1) 31%,rgba(58,132,195,1) 31%,rgba(97,153,199,1) 50%, rgba(65,154,214,1) 59%,rgba(75,184,240,1) 68%,rgba(58,139,194,1) 81%,rgba(38,85,139,1) 92%);*/
+        background: #7A7474;
+        width: 100%;
+        height: 38px;
+        position: absolute;
+        top: 0px;
+        z-index: 9999999;
+        direction: ltr;
+    }
+
+    .gooButton {
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+        height: 27px;
+        background-color: transparent;
+    }
+
+    .gooButtonOver {
+        -webkit-border-radius: 5px;
+        cursor: pointer;
+        background-color: darkblue;
+    }
+</style>
+
+<div class="mainToolbar">
+    <table>
+        <tr>
+            <td class="tilt pic">
+                <img id="ImageButtonSLeft" class="gooButton" title="Close Toolbar" src="images/slideleft.png" alt="Close Toolbar" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image1" src="images/separator.png" style="height:25px;border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonUpload" class="gooButton" title="Uplaod Image" src="images/upload.png" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image1" src="images/separator.png" style="height:25px;border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonReset" class="gooButton gooDesignButton" title="Reset" src="images/reset.png" alt="Reset" />
+            </td>
+
+            <td class="tilt pic">
+                <img id="ImageButtonUndo" class="gooButton gooDesignButton" title="undo" src="images/undo.png" alt="Undo" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonRedo" class="gooButton gooDesignButton" title="Redo" src="images/redo.png" alt="Redo" />
+            </td>
+
+            <td class="tilt pic">
+                <img id="ImageButtonSave" class="gooButton gooDesignButton" title="Save" src="images/save.png" alt="Save" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonFacebook" class="gooButton gooDesignButton" title="Post to Facebook" src="images/FB-logo.png" alt="Save to Twitter" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonTwitpic" class="gooButton gooDesignButton" title="Post to Twitter" src="images/twitter-icon.png" alt="Save to Twitter" />
+            </td>
+            <td class="tilt pic">
+                <img src="images/separator.png" class="gooDesignButton" style="border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonPixelInfo" class="gooButton gooDesignButton" title="Pixel Info" src="images/pixelInfo.png" alt="Pixel Info" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonCrop" class="gooButton gooDesignButton" title="Crop" src="images/crop.png" alt="Crop" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonZoom" class="gooButton gooDesignButton" title="Zoom" src="images/zoom.png" alt="Zoom" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonRLeft" class="gooButton gooDesignButton" title="Rotate Left" src="images/Rotate_left.png" alt="Rotate Left" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonRRight" class="gooButton gooDesignButton" title="Rotate Right" src="images/Rotate_right.png" alt="Rotate Right" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonRotate" class="gooButton gooDesignButton" title="Custom Rotate..." src="images/Custom_rotate.png" alt="Custom Rotate..." />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonFlipH" class="gooButton gooDesignButton" title="Horizontal Flip" src="images/Horizontal_flip.png" alt="Horizontal Flip" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonFlipV" class="gooButton gooDesignButton" title="Vertical Flip" src="images/vertical_flip.png" alt="Vertical Flip" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image3" src="images/separator.png" class="gooDesignButton" style="border-width:0px;" />
+            </td>
+
+            <td class="tilt pic">
+                <img id="ImageButtonBriCon" class="gooButton gooDesignButton" title="Brightness/Contrast" src="images/Brightness_Contrast_icon.png" alt="Brightness/Contrast" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonHue" class="gooButton gooDesignButton" title="Hue/Saturation/Lightness" src="images/Hue.png" alt="Hue/Saturation/Lightness" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonSepia" class="gooButton gooDesignButton" title="Sepia" src="images/sepia.png" alt="Sepia" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonGray" class="gooButton gooDesignButton" title="Grayscale" src="images/grayscale.png" alt="Sepia" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonSolarize" class="gooButton gooDesignButton" title="Solarize" src="images/Solarize.png" alt="Solarize" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonBlur" class="gooButton gooDesignButton" title="Blur" src="images/blur.png" alt="Blur" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonSharpen" class="gooButton gooDesignButton" title="Sharpen" src="images/sharpen.png" alt="Crop" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonAdjustColor" class="gooButton gooDesignButton" title="Color Adjust" src="images/color.png" alt="Color Adjust" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonInvert" class="gooButton gooDesignButton" title="Invert" src="images/invert.png" alt="Invert" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonPointillize" class="gooButton gooDesignButton" title="Pointillize" src="images/pointillize.png" alt="Pointillize" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image7" src="images/separator.png" class="gooDesignButton" style="height:18px;border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonEdge1" class="gooButton gooDesignButton" title="Edge Detection 1" src="images/edge1.png" alt="Edge 1" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonEdge2" class="gooButton gooDesignButton" title="Edge Detection 2" src="images/edge2.png" alt="Edge 2" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonEdgeL" class="gooButton gooDesignButton" title="Edge Detection 2" src="images/edgel.png" alt="Edge 2" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image9" src="images/separator.png" class="gooDesignButton" style="height:18px;border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonNoise" class="gooButton gooDesignButton" title="Noise" src="images/Add_noise.png" alt="Add Noise" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonRemoveNoise" class="gooButton gooDesignButton" title="Remove Noise" src="images/Remove_noise.png" alt="Remove Noise" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image15" src="images/separator.png" class="gooDesignButton" style="height:18px;border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonMosaic" class="gooButton gooDesignButton" title="Mosaic" src="images/mosaic.jpg" alt="Remove Noise" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonGlow" class="gooButton gooDesignButton" title="Glow" src="images/glow.png" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonEmboss" class="gooButton gooDesignButton" title="Emboss" src="images/emboss.png" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonUnsharpMask" class="gooButton gooDesignButton" title="Unsharp Mask" src="images/mask.png" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image15" src="images/separator.png" class="gooDesignButton" style="height:18px;border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonBlend" class="gooButton gooDesignButton" title="Blend" src="images/blend1.png" />
+            </td>
+            
+            <td class="tilt pic">
+                <img id="ImageButtonFrame" class="gooButton gooDesignButton" title="Frame" src="images/frame.png" />
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonText" class="gooButton gooDesignButton" title="Add text" src="images/text.png" />
+            </td>
+            <td class="tilt pic">
+                <img id="Image15" src="images/separator.png" class="gooDesignButton" style="height:18px;border-width:0px;" />
+            </td>
+            <td class="tilt pic">
+                <a href="http://aspspider.ws/gooedit/Features.aspx" target="_blank">
+                    <img id="ImageButtonInformation" class="gooButton gooDesignButton" title="Information" src="images/information.png" />
+                </a>
+            </td>
+            <td class="tilt pic">
+                <img id="ImageButtonInternet" class="gooButton gooDesignButton" title="GooEdit Blog" src="images/internet.png" />
+            </td>
+
+            
+
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>GooEdit Extension Options</title>
+    <script src="Scripts/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            restore_options();
+            $('#btSave').click(function () {
+                save_options();
+            });
+        });
+
+        function save_options() {
+            localStorage["twitUser"] = $('#twitUser').val();
+            localStorage["twitPass"] = $('#twitPass').val();
+
+            // Update status to let user know options were saved.
+            $('#status').html('Options Saved.').hide().show('slow');
+            setTimeout(function () {
+                $('#status').hide('slow');
+            }, 2000);
+        }
+
+        function restore_options() {
+            var twitUser = localStorage["twitUser"];
+            if (!twitUser) {
+                return;
+            }
+
+            var twitPass = localStorage["twitPass"];
+            $('#twitUser').val(twitUser);
+            $('#twitPass').val(twitPass);
+        }
+    </script>
+</head>
+<body>
+    <div style="width:590px;margin-left:auto;margin-right:auto">
+        <img src="icon.png" width="64px" height="64px" />
+        <h1 style="float:right;padding-right:200px"> GooEdit Options Page:</h1>
+    </div>
+    <br /><br /><br />
+    <table border="0" cellpadding="0" cellspacing="0" style="width:200px;margin-left:auto;margin-right:auto">
+        <tr>
+            <td colspan="2">
+                Twitter Account:
+            </td>
+        </tr>
+        <tr>
+            <td>User:</td>
+            <td><input id="twitUser" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input id="twitPass" type="password" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="btSave">Save</button>
+            </td>
+        </tr>
+    </table>
+    <div id="status" style="width:200px;margin-left:auto;margin-right:auto"></div>
+    <br /><br />
+    <div style="width:250px;margin-left:auto;margin-right:auto">
+        Support this extension by donating:
+        <center>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+        " />
+                <input type="image" src="https://www.paypal.com/en_US/IL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </center>
+    </div>
+    <br /><br />
+    <div style="width:300px;margin-left:auto;margin-right:auto">
+        Contact <a href="mailto:gooedit@gmail.com">gooedit@gmail.com</a> for any suggestions.<br />
+        <center><a href="http://aspspider.ws/gooedit/">GooEdit WebSite</a></center>
+    </div>
+</body>
+</html>

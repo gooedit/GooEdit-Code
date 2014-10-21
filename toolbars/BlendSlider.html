@@ -1,0 +1,111 @@
+<style>
+    .changeSliderPositionImg {
+        cursor: pointer;
+        float: right;
+        width: 25px;
+        height: 25px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        
+    }
+
+        .changeSliderPositionImg:hover {
+            /*background: blue;*/
+            border-radius: 50%;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            color:red;
+        }
+            
+</style>
+<div class="wrraper-ltr">
+    <div class="slider blendSlider" style="background-color: #6d695c; background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)), linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)); background-size: 70px 120px; background-size: 20px 20px; position: absolute; border-style: outset;
+           border-width: thin; -webkit-border-radius: 5px; display: none; z-index: 999999999999; ">
+        <table style="padding:1px 1px 1px 1px" cellpadding="0" cellspacing="0" border="0" width="195">
+            <tr>
+                <td colspan="2" id="ignore">
+                   
+                        <img id="blendButtonClose" title="Close" class="ButtonClose" src="images/slideleft.png" alt="Close" style="width: 17px; margin-top: 2px;" />
+                    
+                         <font color="white">
+                            Blend
+                        </font>
+                        <img class="changeSliderPositionImg" title="Move slider" src="images/forward_arrow_right.png" alt="Move slider" />
+</td>
+            </tr>
+            <tr>
+                <td style="border-top-width:1px;border-top-color:Black;border-top-style:solid; padding-top:10px;">
+                    <div id="blendRadiusSlider" style="width:90%; margin: 5px 5px 0px 5px;"></div><br />
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top-width:1px;border-top-color:Black;border-top-style:solid; padding-top:10px;">
+                    <font color="white">
+                        Amount:
+                        </font>
+                        <input type="text" id="value-amount" value="0" class="demo-input" style="width:30px;" />
+                        <div id="slider-amount" class="ui-slider" style="width:150px;margin-top:5px;margin-bottom:5px;">
+                            <a href="#" style="outline:none;border:none;">
+                                <div class="ui-slider-handle" style="left: 136px;"></div>
+                            </a><div class="ui-slider-range"></div>
+                        </div>
+</td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="white">
+                        Mode:
+                        </font>
+                        <select id="value-mode" class="demo-select">
+                            <option value="normal">Normal</option>
+                            <option value="multiply">Multiply</option>
+                            <option value="lighten">Lighten</option>
+                            <option value="darken">Darken</option>
+                            <option value="darkercolor">Darker Color</option>
+                            <option value="lightercolor">Lighter Color</option>
+                            <option value="difference">Difference</option>
+                            <option value="screen">Screen</option>
+                            <option value="exclusion">Exclusion</option>
+                            <option value="overlay">Overlay</option>
+                            <option value="softlight">Soft Light</option>
+                            <option value="hardlight">Hard Light</option>
+                            <option value="colordodge">Color Dodge</option>
+                            <option value="colorburn">Color Burn</option>
+                            <option value="lineardodge">Linear Dodge</option>
+                            <option value="linearburn">Linear Burn</option>
+                            <option value="linearlight">Linear Light</option>
+                            <option value="vividlight">Vivid Light</option>
+                            <option value="pinlight">Pin Light</option>
+                            <option value="hardmix">Hard Mix</option>
+                        </select>
+</td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="white">
+                        Blend image:<br>
+                        </font>
+                        <div id="page-wrapper">
+                            <div id="fileDisplayArea"></div>
+                            <div>
+                                <input type="file" id="fileInput">
+                            </div>
+                        </div>
+</td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <input class="myButton" style="margin-bottom:2px; margin-top:5px;margin-left:20px;" type="button" id="blendButton" value="Blend" disabled>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
